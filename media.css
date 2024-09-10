@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.parent{
+    height: 100%;
+
+}
+.header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: cyan;
+    align-items: center;
+}
+.main{
+    display: flex;
+    height: 80vh;
+}
+.footer{
+    height: 10vh;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2vw;
+    color: gray;
+    margin-right: 10px;
+}
+.header_logo{
+    font-size: 4vw;
+}
+.header_menu{
+    display: flex;
+    gap: 30px;
+    font-size: 2vw;
+}
+.header_menu a:hover{
+    color: goldenrod;
+}
+.main_img{
+    flex: 1;
+    background-image: url("https://jooinn.com/images/beautiful-lake-5.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.main_text{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_text_1{
+    font-size: 2vw;
+}
+[class^="main_text"]{
+    font-size: 1.5vw;
+}
+@media(max-width:576px){
+    .header{
+        justify-content: center;
+    }
+    .header_logo{
+        font-size: 5vw;
+    }
+    .header_menu{
+        display: none;
+    }
+    .main_text_2,.main_text_3,.main_text_4{
+    display: none;
+}
+.main_text_1{
+    font-size: 4vw;
+}
+.main{
+    flex-direction: column;
+}
+.footer{
+    justify-content: center;
+}
+}
